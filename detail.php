@@ -193,9 +193,9 @@
 										
 										# Building an back_urls
 										$preference->back_urls = array(
-											"success" => "",
-											"failure" => "",
-											"pending" => ""
+											"success" => "https://orlandogaspar-mp-ecommerce-php.herokuapp.com/respuesta.php?id=success",
+											"failure" => "https://orlandogaspar-mp-ecommerce-php.herokuapp.com/respuesta.php?id=failure",
+											"pending" => "https://orlandogaspar-mp-ecommerce-php.herokuapp.com/respuesta.php?id=pending"
 										);
 										$preference->auto_return = "approved";
 										
@@ -212,7 +212,7 @@
 										
 						
 										$preference->external_reference = "orlandogasparreyes@hotmail.com";
-										$preference->notification_url=" ";
+										$preference->notification_url="https://orlandogaspar-mp-ecommerce-php.herokuapp.com/webhook.php";
 										$preference->save();
 
 										echo "<a href='$preference->init_point'>
