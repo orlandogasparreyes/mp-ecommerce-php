@@ -10,6 +10,6 @@ switch($data['id']){
 		echo "<h2>El pago está siendo procesado</h2>";
 		break;
     case "success":
-       json_decode($data);
+        echo json_decode($data);
 		break;
 }
