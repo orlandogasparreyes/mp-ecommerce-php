@@ -5,7 +5,7 @@ $AccessToken	= 'APP_USR-1159009372558727-072921-8d0b9980c7494985a5abd19fbe921a3d
 MercadoPago\SDK::setAccessToken($AccessToken);
 
 //Obtener los I/O de php y conevrtirlo de json a texto
-$body = @file_get_contents('php://input');
+$body = file_get_contents('php://input');
 $data = json_decode($body);
 
 file_put_contents(__DIR__  .'/notificaciones/'.$data->id.".json", $body);
